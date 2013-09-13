@@ -335,7 +335,7 @@ Please contact me on #coderbus IRC. ~Carnie x
 			standing.overlays	+= image("icon"='icons/effects/blood.dmi', "icon_state"="uniformblood")
 
 		if(U.hastie)
-			var/tie_color = U.hastie.color
+			var/tie_color = U.hastie.col
 			if(!tie_color) tie_color = U.hastie.icon_state
 			lying.overlays		+= image("icon"='icons/mob/ties.dmi', "icon_state"="[tie_color]2")
 			standing.overlays	+= image("icon"='icons/mob/ties.dmi', "icon_state"="[tie_color]")

@@ -447,7 +447,7 @@
 
 			usr << "<span class='notice'>You colour [src] [clr].</span>"
 			icon_state = "egg-[clr]"
-			color = clr
+			col = clr
 		else
 			..()
 

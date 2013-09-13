@@ -53,7 +53,7 @@
 	src.overlays = 0
 
 	if (src.destroyed)
-		src.icon_state = text("[]-1", src.color)
+		src.icon_state = text("[]-1", src.col)
 
 	else
 		icon_state = "[col]"
@@ -299,7 +299,7 @@ Release Pressure: <A href='?src=\ref[src];pressure_adj=-1000'>-</A> <A href='?sr
 				)
 				var/label = input("Choose canister label", "Gas canister") as null|anything in colors
 				if (label)
-					src.color = colors[label]
+					src.col = colors[label]
 					src.icon_state = colors[label]
 					src.name = "Canister: [label]"
 		src.updateUsrDialog()

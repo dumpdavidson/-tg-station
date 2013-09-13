@@ -195,7 +195,7 @@
 	if(!ticker)			return 0
 	if(!operating)		operating = 1
 
-	animate("opening")
+	animate_this("opening")
 	icon_state = "door0"
 	src.SetOpacity(0)
 	sleep(10)
@@ -217,7 +217,7 @@
 	if(operating)	return
 	operating = 1
 
-	animate("closing")
+	animate_this("closing")
 	src.density = 1
 	explosion_resistance = initial(explosion_resistance)
 	src.layer = 3.1

@@ -90,4 +90,4 @@
 		if(chosen_stamp)
 			name = chosen_stamp.name
 			icon_state = chosen_stamp.icon_state
-			color = chosen_stamp.color
+			col = chosen_stamp.col
